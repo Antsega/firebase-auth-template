@@ -1,0 +1,8 @@
+# firebase
+**/serviceAccount.json
+functions/lib
+
+# workspace
+**/node_modules
+**/.vscode
+
