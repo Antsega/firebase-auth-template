@@ -1,11 +1,13 @@
 # firebase
 **/serviceAccount.json
 functions/lib
+**/.env
 
 # workspace
 **/node_modules
 **/.vscode
 **/firebase-debug.log
+**/firebase-debug.1
 **/ui-debug.log
-
+**/package-lock.json
 

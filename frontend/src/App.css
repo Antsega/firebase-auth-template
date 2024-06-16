@@ -1,38 +1,70 @@
+/* src/App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sign-up-container,
+.login-container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sign-up-container h2,
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.sign-up-container form,
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up-container label,
+.login-container label {
+  margin-bottom: 5px;
+}
+
+.sign-up-container input,
+.login-container input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sign-up-container button,
+.login-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-up-container .error-message,
+.login-container .error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+
+.sign-up-container p,
+.login-container p {
+  margin-top: 20px;
+}
+
+.sign-up-container a,
+.login-container a {
+  color: #007bff;
+  text-decoration: none;
 }

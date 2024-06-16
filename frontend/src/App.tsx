@@ -1,23 +1,28 @@
+// src/App.tsx
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import SignUp from './components/SignUp';
+import Login from './components/Login';
+import Welcome from './components/Welcome';
+import { AuthProvider } from './context/AuthContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Test <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+      <Router>
+        <div className="App">
+          <header className="App-header">
+            <h1>Welcome to the App</h1>
+          </header>
+          <Routes>
+            <Route path="/" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/welcome" element={<Welcome />} />
+          </Routes>
+        </div>
+      </Router>
+    </AuthProvider>
   );
 }
 
