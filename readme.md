@@ -18,3 +18,13 @@ $env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account
 
 firebase serve --only hosting
 firebase emulators:start
+
+1) Replace .env in frontend/ with App's credentials
+2) (optional) Rename roles for new users in (default to baseUser)
+    - frontend/src/core/api/firebase.ts
+    - frontend/src/core/types/firebase.d.ts
+    - functions/src/CreateFirebaseUser.ts
+
+AuthContext
+Centralized Authentication Logic - All authentication-related logic is centralized in one place, making it easier to manage and update.
+

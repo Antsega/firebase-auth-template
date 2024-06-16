@@ -1,26 +1,27 @@
-/* src/App.css */
 .App {
   text-align: center;
 }
 
 .App-header {
   background-color: #282c34;
-  padding: 20px;
+  padding: 5%;
   color: white;
 }
 
 .sign-up-container,
 .login-container {
-  margin: 20px auto;
-  padding: 20px;
+  margin: 5% auto;
+  padding: 5%;
   border: 1px solid #ccc;
   border-radius: 10px;
-  width: 300px;
+  width: 80%;
+  max-width: 400px;
+  box-sizing: border-box;
 }
 
 .sign-up-container h2,
 .login-container h2 {
-  margin-bottom: 20px;
+  margin-bottom: 5%;
 }
 
 .sign-up-container form,
@@ -31,20 +32,21 @@
 
 .sign-up-container label,
 .login-container label {
-  margin-bottom: 5px;
+  margin-bottom: 2%;
 }
 
 .sign-up-container input,
 .login-container input {
-  margin-bottom: 15px;
-  padding: 10px;
+  margin-bottom: 5%;
+  padding: 2.5%;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .sign-up-container button,
 .login-container button {
-  padding: 10px;
+  padding: 2.5%;
   background-color: #007bff;
   color: white;
   border: none;
@@ -52,15 +54,20 @@
   cursor: pointer;
 }
 
+.sign-up-container .google-signup-button {
+  margin-top: 5%;
+  background-color: #db4437;
+}
+
 .sign-up-container .error-message,
 .login-container .error-message {
   color: red;
-  margin-bottom: 15px;
+  margin-bottom: 5%;
 }
 
 .sign-up-container p,
 .login-container p {
-  margin-top: 20px;
+  margin-top: 5%;
 }
 
 .sign-up-container a,

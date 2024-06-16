@@ -42,7 +42,7 @@ export const createFirebaseUser = functions.https.onRequest(async (request, resp
         email: email,
         firstName: firstName,
         lastName: lastName,
-        role: "freelancer"
+        role: "baseUser"
       });
 
       const actionCodeSettings = {
