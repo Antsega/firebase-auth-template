@@ -10,3 +10,9 @@ npm run build
 cd ..
 firebase emulators:start --only functions
 ```
+
+```shell
+export GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
+```
+
+firebase serve --only hosting
