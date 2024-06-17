@@ -12,8 +12,14 @@ firebase emulators:start --only functions
 ```
 
 ```shell
-export GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json
-$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\username\Downloads\service-account-file.json"
+unset GOOGLE_APPLICATION_CREDENTIALS
+export GOOGLE_APPLICATION_CREDENTIALS=/path/to/serviceAccount.json --> Linux
+or
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/serviceAccount.json --> Mac
+or
+set GOOGLE_APPLICATION_CREDENTIALS=path\to\key.json --> windows
+
+env | grep GOOGLE_APPLICATION_CREDENTIALS
 ```
 
 firebase serve --only hosting

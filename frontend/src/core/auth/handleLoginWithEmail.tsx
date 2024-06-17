@@ -6,6 +6,7 @@ import {
 } from "@firebase/auth";
 import { removeJwtToken, setJwtToken, getJwtToken } from '../api/api';
 import { createUser, getUserProfile, checkUserRole } from '../api/firebase';
+import { createFirebaseUser } from '../api/functions'
 import { getUTCtimeNow } from '../utils';
 
 
@@ -39,7 +40,7 @@ export const handleLoginWithEmail = async (email, password, setUserInfo, setIsAu
         }
 
         setUserInfo(data);
-        const docSnapData = await createUser(user, additionalData);
+        const docSnapData = await createFirebaseUser(user);
         // console.log('docSnapData', docSnapData)
       }
 

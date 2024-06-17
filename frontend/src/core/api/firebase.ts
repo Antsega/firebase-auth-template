@@ -1,6 +1,5 @@
 import { getFirestore, doc, setDoc, getDoc, deleteDoc, updateDoc,collection, getDocs } from "firebase/firestore";
-
-const db = getFirestore();
+import { db } from '../../core/config/firebase'
 
 export const createUser = async (userAuth: any, additionalData = {}) => {
     if (!userAuth) return null;
@@ -14,7 +13,7 @@ export const createUser = async (userAuth: any, additionalData = {}) => {
             role: "baseUser",
             ...additionalData,
         });
-        return { uid: userAuth.uid, email: userAuth.email, role: "non-admin", ...additionalData };
+        return { uid: userAuth.uid, email: userAuth.email, role: "baseUser", ...additionalData };
     }
     return docSnap.data();
 };
