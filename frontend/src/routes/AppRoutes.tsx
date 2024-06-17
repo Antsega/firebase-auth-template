@@ -1,32 +1,60 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { NotFound, IsLoading, Welcome } from '../components';
+import {IsLoading } from '../components';
 import { useAuth } from '../contexts/AuthContext';
-import { Login, SignUp } from '../views/Auth';
+import { Login, SignUp, Welcome } from '../views/Auth';
+
+import { AuthRoute, ProtectedRoute } from './components/'
 
 export const AppRoutes = () => {
-  const { isLoading, isAuthenticated } = useAuth();
+  const { isLoading } = useAuth();
 
   if (isLoading) {
-    return <IsLoading />;
+    return (
+    <IsLoading />
+    );
   }
 
+
+  const AuthRoutes = () => {
   return (
+    <>
+        <Route path="/login" element={
+            <AuthRoute>
+                <Login />
+            </AuthRoute>
+            } />
+        <Route path="/signup" element={
+            <AuthRoute>
+                <SignUp />
+            </AuthRoute>
+            } />
+        </>
+  )
+}
+
+    // const SharedRoutes = () => {
+    //     return (
+    //         <>
+    //         <Route path="/welcome" element={
+    //         <ProtectedRoute>
+    //             <SignUp />
+    //         </ProtectedRoute>
+    //         } />
+    //         </>
+    //     )
+    // }
+
+
+return (
     <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/sign-up" element={<SignUp />} />
-        
-        {isAuthenticated ? (
-          <>
+        <Routes>
+            <Route path="/" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/welcome" element={<Welcome />} />
-            <Route path="/" element={<Navigate to="/welcome" replace />} />
-          </>
-        ) : (
-          <Route path="/" element={<Navigate to="/login" replace />} />
-        )}
-        
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+            {/* {AuthRoutes()}
+
+            {SharedRoutes()} */}
+        </Routes>
     </Router>
-  );
+)
 };

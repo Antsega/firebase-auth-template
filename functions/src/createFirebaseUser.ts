@@ -5,11 +5,6 @@ import { verifyAdminToken } from './helpers/verifyAdminToken';
 import { getAuth } from 'firebase-admin/auth';
 import { firestore } from 'firebase-admin';
 
-
-// admin.initializeApp(); 
-
-
-
 // @ts-ignore
 export const createFirebaseUser = functions.https.onRequest(async (request, response) => {
   cors(request, response, async () => {

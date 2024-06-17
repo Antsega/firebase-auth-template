@@ -25,6 +25,9 @@ firebase emulators:start
     - frontend/src/core/types/firebase.d.ts
     - functions/src/CreateFirebaseUser.ts
 
+3) Change frontend/src/core/api/functions.ts
+    - functionUrl path to match urls when starting firebase functions
+
 AuthContext
 Centralized Authentication Logic - All authentication-related logic is centralized in one place, making it easier to manage and update.
 

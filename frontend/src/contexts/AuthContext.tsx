@@ -7,7 +7,7 @@ import {
   sendPasswordResetEmail,
   verifyPasswordResetCode,
   confirmPasswordReset
-} from "@firebase/auth";
+} from "firebase/auth";
 import { app } from '../core/config/firebase';
 import { removeJwtToken, setJwtToken, getJwtToken } from '../core/api/api';
 import { handleLoginWithGoogle } from '../core/auth/handleLoginWithGoogle';

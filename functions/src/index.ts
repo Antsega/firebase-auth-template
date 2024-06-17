@@ -1,1 +1,2 @@
-// export { generateCSA } from './generateCSA';
+export { deleteFirebaseUser } from './deleteFirebaseUser';
+export { createFirebaseUser } from './createFirebaseUser';

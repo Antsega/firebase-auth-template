@@ -1,8 +1,8 @@
 // src/components/SignUp.tsx
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-// import { auth } from '../core/config/firebase';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
+import {app} from '../../core/config/firebase'
 import '../../App.css'
 
 export default function SignUp() {
@@ -15,7 +15,7 @@ export default function SignUp() {
     event.preventDefault();
 
     try {
-      const auth = getAuth();
+      const auth = getAuth(app);
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       console.log('Signed up user:', user);

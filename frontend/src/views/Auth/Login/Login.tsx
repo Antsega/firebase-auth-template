@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import '../../App.css'
+import {app} from '../../../core/config/firebase'
 
-// import { auth } from '../../core/config/firebase'
-
-export default function Login () {
+export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -15,7 +13,7 @@ export default function Login () {
     event.preventDefault();
 
     try {
-      const auth = getAuth();
+      const auth = getAuth(app);
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       console.log('Logged in user:', user);
