@@ -4,9 +4,6 @@ const cors = require('cors')({ origin: true });
 import { verifyAdminToken } from './helpers/verifyAdminToken';
 const { getAuth } = require('firebase-admin/auth');
 
-
-// admin.initializeApp(); 
-
 // @ts-ignore
 export const deleteFirebaseUser = functions.https.onRequest(async (request, response) => {
     cors(request, response, async () => {

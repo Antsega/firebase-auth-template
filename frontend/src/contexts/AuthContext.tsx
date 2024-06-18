@@ -8,7 +8,7 @@ import {
   verifyPasswordResetCode,
   confirmPasswordReset
 } from "firebase/auth";
-import { auth } from '../core/config/firebase';
+import { app } from '../core/config/firebase';
 import { removeJwtToken, setJwtToken, getJwtToken } from '../core/api/api';
 import { handleLoginWithGoogle } from '../core/auth/handleLoginWithGoogle';
 import { handleLoginWithEmail } from '../core/auth/handleLoginWithEmail';
@@ -106,12 +106,13 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     if (jwtToken) {
       setJwtToken(jwtToken);
     }
-    const docSnapData = await getUserProfile(currentUser.uid);
-    if (docSnapData) {
-      docSnapData.uid = currentUser.uid;
-      setUserInfo(docSnapData);
-    }
-    console.log('docSnapData', docSnapData);
+    // TODO: NEED TO CREATE FIREBASE USER ON SIGNUP
+    // const docSnapData = await getUserProfile(currentUser.uid);
+    // if (docSnapData) {
+    //   docSnapData.uid = currentUser.uid;
+    //   setUserInfo(docSnapData);
+    // }
+    // console.log('docSnapData', docSnapData);
   };
 
   useEffect(() => {
