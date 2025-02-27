@@ -3,7 +3,7 @@ import {
   getAuth,
   signInWithEmailAndPassword,
   getAdditionalUserInfo,
-} from "@firebase/auth";
+} from "firebase/auth";
 import { removeJwtToken, setJwtToken, getJwtToken } from '../api/api';
 import { createUser, getUserProfile, checkUserRole } from '../api/firebase';
 import { createFirebaseUser } from '../api/functions'

@@ -4,7 +4,7 @@ import {
   signInWithPopup,
   getAuth,
   getAdditionalUserInfo,
-} from "@firebase/auth";
+} from "firebase/auth";
 import { setJwtToken } from '../api/api';
 import { createUser, getUserProfile } from '../api/firebase';
 import { getUTCtimeNow } from '../utils';
