@@ -29,7 +29,7 @@ const NavigationBar: React.FC = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+            Menu
           </Typography>
           <Button color="inherit" onClick={handleContactUs}>
             Contact Us
