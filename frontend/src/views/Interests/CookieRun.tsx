@@ -17,13 +17,13 @@ const CookieRun: React.FC = () => {
               
               <Grid item>
                 <Typography variant="h3" component="h1" align="center" gutterBottom>
-                  Random stuff
+                  Cookie Run Kingdom
                 </Typography>
               </Grid>
 
               <Grid item>
                 <Typography variant="h6" align="center" paragraph>
-                  More random stuff
+                  Everything about Cookie Run Kingdom
                 </Typography>
               </Grid>
 
