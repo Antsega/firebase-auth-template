@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Paper, Box, Grid } from '@mui/material';
 import ButtonAppBar from '../Auth/Login/components/welcome components/navbar';
-import PersonIcon from '@mui/icons-material/Person';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 
 const About: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const About: React.FC = () => {
           <Paper elevation={3} sx={{ p: 4 }}>
             <Grid container spacing={3} direction="column" alignItems="center">
               <Grid item>
-                <PersonIcon sx={{ fontSize: 60, color: 'red' }} />
+                <FitnessCenterIcon sx={{ fontSize: 60, color: 'red' }} />
               </Grid>
               
               <Grid item>
