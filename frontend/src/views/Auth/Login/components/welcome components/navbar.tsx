@@ -33,6 +33,7 @@ const MENU_ITEMS: MenuItemType[] = [
   { label: 'Interests', path: '/interests' },
   { label: 'Gallery', path: '/gallery' },
   { label: 'Tier Lists', path: '/interests/tier-lists' },
+  { label: 'Contact Us', path: '/contact-us' },
 ];
 
 const ButtonAppBar: React.FC = () => {
