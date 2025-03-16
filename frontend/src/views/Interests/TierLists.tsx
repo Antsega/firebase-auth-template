@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Paper, Box, Grid } from '@mui/material';
-import ButtonAppBar from '../Auth/Login/components/welcome components/navbar';
+import ButtonAppBar from '../Auth/Login/components/welcomecomponents/navbar';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 
 const TierLists: React.FC = () => {

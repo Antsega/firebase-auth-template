@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Typography, Paper, Box, Grid } from '@mui/material';
-import ButtonAppBar from '../Auth/Login/components/welcome components/navbar';
+import ButtonAppBar from '../Auth/Login/components/welcomecomponents/navbar';
 import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 
 const CookieRun: React.FC = () => {

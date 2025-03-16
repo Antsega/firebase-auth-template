@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography, TextField, Button, Paper } from '@mui/material';
-import ButtonAppBar from './Login/components/welcome components/navbar';
+import ButtonAppBar from './Login/components/welcomecomponents/navbar';
 
 const ContactUs: React.FC = () => {
   const handleSubmit = (event: React.FormEvent) => {

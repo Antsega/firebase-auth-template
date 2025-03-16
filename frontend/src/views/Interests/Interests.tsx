@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Paper, Box, Grid, List, ListItem, ListItemText, Divider, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
-import ButtonAppBar from '../Auth/Login/components/welcome components/navbar';
+import ButtonAppBar from '../Auth/Login/components/welcomecomponents/navbar';
 import VideogameAssetIcon from '@mui/icons-material/VideogameAsset';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';

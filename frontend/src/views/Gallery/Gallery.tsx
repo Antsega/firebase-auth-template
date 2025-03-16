@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Typography, Grid, Paper, ImageList, ImageListItem } from '@mui/material';
 import { Box } from '@mui/system';
-import ButtonAppBar from '../Auth/Login/components/welcome components/navbar';
+import ButtonAppBar from '../Auth/Login/components/welcomecomponents/navbar';
 import CollectionsIcon from '@mui/icons-material/Collections';
 
 const itemData = [
