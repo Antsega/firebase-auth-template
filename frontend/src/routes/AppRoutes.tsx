@@ -8,7 +8,7 @@ import Anime from '../views/Interests/Anime';
 import Games from '../views/Interests/Games';
 import TierLists from '../views/Interests/TierLists';
 import CookieRun from '../views/Interests/CookieRun';
-
+import Gallery from '../views/Gallery/Gallery';
 import { AuthRoute, ProtectedRoute } from './components/'
 
 export const AppRoutes = () => {
@@ -62,6 +62,7 @@ return (
             <Route path="/interests/games" element={<Games />} />
             <Route path="/interests/tier-lists" element={<TierLists />} />
             <Route path="/interests/cookie-run" element={<CookieRun />} />
+            <Route path="/gallery" element={<Gallery />} />
             {/* {AuthRoutes()}
 
             {SharedRoutes()} */}
