@@ -62,10 +62,7 @@ const ButtonAppBar: React.FC = () => {
             <MenuItem onClick={() => { navigate('/'); handleClose(); }}>Home</MenuItem>
             <MenuItem onClick={() => { navigate('/welcome'); handleClose(); }}>Welcome</MenuItem>
             <MenuItem onClick={() => { navigate('/about'); handleClose(); }}>About</MenuItem>
-            <MenuItem onClick={() => { navigate('/interests/anime'); handleClose(); }}>Anime</MenuItem>
-            <MenuItem onClick={() => { navigate('/interests/games'); handleClose(); }}>Games</MenuItem>
-            <MenuItem onClick={() => { navigate('/interests/tier-lists'); handleClose(); }}>Tier Lists</MenuItem>
-            <MenuItem onClick={() => { navigate('/interests/cookie-run'); handleClose(); }}>Cookie Run Kingdom</MenuItem>
+            <MenuItem onClick={() => { navigate('/interests'); handleClose(); }}>Interests</MenuItem>
             <MenuItem onClick={() => { navigate('/gallery'); handleClose(); }}>Gallery</MenuItem>
           </Menu>
         </Toolbar>

@@ -22,6 +22,7 @@ type AuthContextType = {
   setUserInfo: (userInfo: UserInfoType) => void;
   isSuperuser: () => boolean;
   isLoading: boolean;
+  user: User | null;
   loginWithEmail: (credentials: LoginCredentials) => Promise<any>;
   loginWithGoogle: () => Promise<any>;
   logout: () => void;
@@ -136,6 +137,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       setUserInfo,
       isSuperuser,
       isLoading,
+      user: auth.currentUser,
       loginWithEmail,
       loginWithGoogle,
       logout,
