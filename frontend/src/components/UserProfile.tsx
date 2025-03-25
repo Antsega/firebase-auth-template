@@ -9,7 +9,6 @@ interface UserData {
   name: string;
   email: string;
   createdAt: string;
-  // Add any other user fields you want to store
 }
 
 const UserProfile: React.FC = () => {
