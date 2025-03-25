@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { db } from '../firebase-config';
+import { db } from '../config/firebase';
 import { collection, doc, getDoc, setDoc } from 'firebase/firestore';
 import { useAuth } from '../contexts/AuthContext';
 import { Container, Typography, Paper, Box, Grid } from '@mui/material';
